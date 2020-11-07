@@ -1,0 +1,6 @@
+project = inplace-function
+
+using version
+using config
+using install
+using dist

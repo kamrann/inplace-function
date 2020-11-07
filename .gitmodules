@@ -1,0 +1,3 @@
+[submodule "inplace-function/upstream"]
+	path = inplace-function/upstream
+	url = https://github.com/WG21-SG14/SG14.git

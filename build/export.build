@@ -1,0 +1,6 @@
+$out_root/
+{
+  include inplace-function/
+}
+
+export $out_root/inplace-function/$import.target
