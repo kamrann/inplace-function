@@ -18,14 +18,14 @@ cxx.poptions =+ "-I$out_base" "-I$src_base/upstream"
 #
 lib{inplace-function}:
 {
-  cxx.export.poptions = "-I$out_base" "-I$src_base/upstream"
+  cxx.export.poptions = "-I$src_base/upstream" #"-I$out_base"
 }
 
-# Install into the sg14/ subdirectory of, say, /usr/include/
+# Install into the SG14/ subdirectory of, say, /usr/include/
 # recreating subdirectories.
 #
 {hxx}{*}:
 {
-  install         = include/sg14/
+  install         = include/SG14/
   install.subdirs = true
 }

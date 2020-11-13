@@ -1,11 +1,12 @@
 : 1
 name: inplace-function
-version: 0.1.0-a.0.z
+version: 0.1.0
 summary: SG14 inplace_function
 license: BSL-1.0            ; Boost Software License 1.0
 description-file: README.md
 url: https://github.com/WG21-SG14/SG14
 package-url: https://github.com/kamrann/inplace-function
 email: cjangus@gmail.com
+
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0
