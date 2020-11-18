@@ -21,11 +21,22 @@ lib{inplace-function}:
   cxx.export.poptions = "-I$src_base/upstream" #"-I$out_base"
 }
 
-# Install into the SG14/ subdirectory of, say, /usr/include/
+upstream/SG14_test/
+{
+  {hxx ixx txx}{*}: install = false
+}
+
+# Install into the kplatform/ subdirectory of, say, /usr/include/
 # recreating subdirectories.
 #
-{hxx}{*}:
+upstream/
 {
-  install         = include/SG14/
-  install.subdirs = true
+  # Install into the SG14/ subdirectory of, say, /usr/include/
+  # recreating subdirectories.
+  #
+  {hxx}{*}:
+  {
+    install         = include/
+    install.subdirs = true
+  }
 }
